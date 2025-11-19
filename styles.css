@@ -13,6 +13,7 @@ ul, aside {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: 100vh;
 }
 
 .sidebar {
@@ -34,4 +35,18 @@ main {
     display: grid;
     background-color: aliceblue;
     grid-template-columns: 3fr 1fr;
+}
+
+.Announcements {
+    grid-column: 2/3;
+}
+
+.Trending {
+    grid-column: 2/3;
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
