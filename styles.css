@@ -10,6 +10,28 @@ ul, aside {
 	vertical-align: baseline;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
 .sidebar {
     background: blue;
+    grid-row: 1/3;
+}
+
+header, main {
+    display: grid;
+    grid-column: 2/3;
+}
+
+header {
+    grid-template-rows: 1fr 1fr;
+    background: lightgray;
+}
+
+main {
+    display: grid;
+    background-color: aliceblue;
+    grid-template-columns: 3fr 1fr;
 }
