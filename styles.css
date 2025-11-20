@@ -35,7 +35,7 @@ header, main {
 
 header {
     grid-template-rows: 1fr 1fr;
-    background: lightgray;
+    background: #F9ECE3;
 }
 
 main {
@@ -78,4 +78,68 @@ main {
 .sidebar nav ul {
     list-style-type: none;
     padding: 10px;
+    font-size: 20px;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+}
+
+/* header */
+
+header div {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.search {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.search button {
+    width: 10%;
+}
+
+.search input {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.status { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.status button {
+    width: 40px;
+    height: 40px;
+}
+
+.nav-top {
+    grid-column: 2/3;
+}
+.nav-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-top ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-top ul li {
+    width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #F2D894;
+    border-radius: 50px;
+    text-align: center;
 }
