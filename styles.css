@@ -42,11 +42,14 @@ main {
     display: grid;
     background-color: aliceblue;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: stretch;
 }
 
 .Announcements {
     padding-top: 20px;
     grid-column: 2/3;
+    justify-content: space-between;
 }
 
 .Trending {
@@ -54,14 +57,37 @@ main {
 }
 
 #projects {
-    padding: 20px;
+        padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
 }
 
 .card-area {
+    flex: 1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 25px;
+    align-items: end;
+}
+
+.Announcements {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding-top: 20px;
+}
+
+.Announcements h2 {
+    margin-bottom: 10px;
+}
+
+.Announcements .feed:last-of-type {
+    flex: 1; /* This makes the last feed fill the remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .card {
@@ -87,6 +113,10 @@ main {
 
 /* header */
 
+header {
+    box-shadow: 10px 40px 8px black
+}
+
 header div {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -95,15 +125,18 @@ header div {
 .search {
     padding: 15px;
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
 .search button {
     width: 10%;
+    height: 40px;
 }
 
 .search input {
     width: 80%;
+    height: 40px;
     border: 1px solid #ccc;
     border-radius: 50px;
 }
@@ -142,4 +175,12 @@ header div {
     background-color: #F2D894;
     border-radius: 50px;
     text-align: center;
+}
+
+/* main */
+
+/* feeds */
+
+.feed div h2 {
+    font-size: small;
 }
