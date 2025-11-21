@@ -10,6 +10,25 @@ ul, aside {
 	vertical-align: baseline;
 }
 
+/* Icon */
+.icon {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    vertical-align: text-top;
+    display: inline;
+}
+
+.icon-small {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    vertical-align: text-top;
+    margin-right: 5px;
+    display: inline;
+}
+
+/*  */
 a {
     text-decoration: none;
     color: inherit;
