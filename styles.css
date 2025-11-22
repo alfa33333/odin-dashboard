@@ -64,7 +64,7 @@ header {
 main {
     grid-row: 2/6;
     display: grid;
-    background-color: aliceblue;
+    background-color:#FFDDD8;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     align-items: stretch;
@@ -121,7 +121,6 @@ main {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Ensures the pseudo-element stays inside */
 }
 
 .card {
@@ -136,7 +135,7 @@ main {
     top: 0px;
     bottom: 0px;
     width: 10px;
-    background: #F2B52B; /* Your yellow color */
+    background: #D3EADA; 
     border-radius: 10px 0 0 10px;
 }
 
@@ -188,6 +187,7 @@ header div {
     height: 40px;
     border: 1px solid #ccc;
     border-radius: 50px;
+    background-color: white;
 }
 
 .status { 
